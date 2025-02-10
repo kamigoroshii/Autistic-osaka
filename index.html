@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrix Chat</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <aside class="sidebar">
+            <div class="matrix-code"></div>
+            <div class="sidebar-header">
+                <h1>MATRIX</h1>
+            </div>
+            <button class="new-chat-btn">New Chat</button>
+        </aside>
+
+        <main class="main-content">
+            <div class="mobile-header">
+                <h1>OSAKA</h1>
+            </div>
+
+            <div class="chat-messages">
+            </div>
+
+            <div class="input-area">
+                <form class="input-form">
+                    <label for="image-upload" class="image-upload-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                    </label>
+                    <input type="file" id="image-upload" accept="image/*" class="hidden">
+                    <input type="text" placeholder="Enter your message...">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                    </button>
+                </form>
+            </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
